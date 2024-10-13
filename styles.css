@@ -36,6 +36,8 @@ nav {
     background-color: #1e90FF;
     padding: 10px;
     z-index: 1000;
+    display: flex;
+    flex-direction: row; /* Aligne les liens en ligne */
 }
 
 nav a {
@@ -98,6 +100,17 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Colonne pour le menu */
+        align-items: stretch; /* Étire les éléments pour remplir */
+    }
+
+    nav a {
+        padding: 10px; /* Réduit l'espace autour des liens */
+        width: 100%; /* Remplit toute la largeur */
+        text-align: center; /* Centre le texte */
+    }
+
     .service {
         flex-direction: column; /* Colonne unique sur mobile */
         align-items: flex-start; /* Aligne le texte à gauche */
@@ -105,25 +118,24 @@ footer p {
 
     .service img {
         margin-bottom: 10px; /* Espace entre image et texte */
+        width: 100%; /* Ajuste l'image à la largeur du conteneur */
+        max-width: 150px; /* Limite la taille maximale */
     }
 
     header h1 {
-        font-size: 36px;
+        font-size: 36px; /* Réduit la taille du titre */
     }
 
     header p {
-        font-size: 14px;
+        font-size: 14px; /* Réduit la taille du texte */
     }
 
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        padding: 10px;
+    section {
+        padding: 20px; /* Réduit le padding */
+        margin: 10px; /* Réduit la marge */
     }
 
     section h2 {
-        font-size: 24px;
+        font-size: 24px; /* Réduit la taille du titre de section */
     }
 }
