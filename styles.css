@@ -1,0 +1,129 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.4;
+}
+
+header {
+    background-color: #0B1F66;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 45.5px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+header p {
+    font-size: 15.1px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    margin-top: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1e90FF;
+    padding: 10px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background: #BB0909;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 40px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-top: 60px;
+}
+
+section h2 {
+    color: #0B1F66;
+    font-size: 30px;
+    border-bottom: 2px solid #BB0909;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0B1F66;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service img {
+    width: 150px; /* Ajuste la taille de l'image */
+    height: auto;
+    margin-right: 20px;
+}
+
+.service div {
+    max-width: 600px; /* Limite la largeur du texte */
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column; /* Colonne unique sur mobile */
+        align-items: flex-start; /* Aligne le texte à gauche */
+    }
+
+    .service img {
+        margin-bottom: 10px; /* Espace entre image et texte */
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
